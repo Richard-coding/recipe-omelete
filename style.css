@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font-outfit);
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone0-100: hsl(30, 54%, 90%);
+  --stone0-150: hsl(30, 18%, 87%);
+  --stone0-600: hsl(30, 10%, 34%);
+  --stone0-900: hsl(24, 5%, 18%);
+  --brown0-800: hsl(14, 45%, 36%);
+  --rose0-800: hsl(332, 51%, 32%);
+  --rose0-50: hsl(330, 100%, 98%);
+
+  --font-young: "Young Serif", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  
+  --margin-30px: 30px;
+}
+
+/* Global */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--stone0-100);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: var(--font-young);
+  font-weight: var(--font-weight-400);
+}
+
+h1 {
+  font-size: 2.25rem;
+  color: var(--stone0-900);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--brown0-800);
+}
+
+hr {
+  margin-bottom: var(--margin-30px);
+  opacity: 0.2;
+}
+
+li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+p,
+li,
+th {
+  color: var(--stone0-600);
+}
+
+/* Card */
+
+.card {
+  margin: 80px;
+  max-width: 650px;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+figure img {
+  margin-bottom: var(--margin-30px);
+  border-radius: 10px;
+}
+
+.simple-omelete {
+  margin-bottom: var(--margin-30px);
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+.preparation-time {
+  background-color: var(--rose0-50);
+  padding: 20px;
+  margin-bottom: var(--margin-30px);
+  border-radius: 10px;
+
+  p {
+    color: var(--rose0-800);
+    font-weight: var(--font-weight-600);
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+  }
+}
+
+.ingredients {
+  margin-bottom: var(--margin-30px);
+}
+.instructions {
+  margin-bottom: var(--margin-30px);
+}
+
+.nutrition {
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+table {
+  color: var(--stone0-600);
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+tr {
+  padding: 10px;
+  border-bottom: 1px solid var(--stone0-150);
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+th {
+  padding: 10px;
+  font-weight: normal;
+}
+
+td {
+  color: var(--brown0-800);
+  font-weight: var(--font-weight-700);
+}
